@@ -3,6 +3,7 @@ using namespace std;
 class Zzz
 {
     int a;
+    
 public:
     Zzz(){}
     Zzz(int x)
