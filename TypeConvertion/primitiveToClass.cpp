@@ -16,7 +16,7 @@ public:
     }
     void putData()
     {
-        cout << a; 
+        cout << a;
     }
     // Zzz operator=(int x)
     // {
