@@ -1,22 +1,27 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Human{
+class Human
+{
     char name[20];
     int age;
-    public:
-    void getData(){
-        cout<<"Enter Name and Age = ";
-        cin>>name;
-        cin>>age;
+
+public:
+    void getData()
+    {
+        cout << "Enter Name and Age = ";
+        cin >> name;
+        cin >> age;
     }
-    void putData(){
-        cout<<"Name = "<<name<<endl;
-        cout<<"Age  = "<<age;
+    void putData()
+    {
+        cout << "Name = " << name << endl;
+        cout << "Age  = " << age;
     }
 };
 
-main(){
+main()
+{
     Human human;
     human.getData();
     human.putData();

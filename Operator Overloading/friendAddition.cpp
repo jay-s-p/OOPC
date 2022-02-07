@@ -1,30 +1,30 @@
 #include <iostream>
 using namespace std;
-class Test
+class Zzz
 {
     int a;
 public:
-    void getdata()
+    void getData()
     {
         cin >> a;
     }
-    void putdata()
+    void putData()
     {
         cout << a << endl;
     }
-    friend Test operator+(Test x,Test y);
+    friend Zzz operator+(Zzz x,Zzz y);
 };
-Test operator+(Test x, Test y)
+Zzz operator+(Zzz x, Zzz y)
 {
     x.a = x.a + y.a;
     return x;
 }
 main()
 {
-    Test t1, t2, t3;
-    t1.getdata();
-    t2.getdata();
+    Zzz t1, t2, t3;
+    t1.getData();
+    t2.getData();
     t3 = t1 + t2;
     cout << endl;
-    t3.putdata();
+    t3.putData();
 }

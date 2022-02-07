@@ -1,34 +1,34 @@
 #include<iostream>
 using namespace std;
-class Test
+class Zzz
 {
     int a;
 public:
-    void getdata()
+    void getData()
     {
         cin >> a;
     }
-    void putdata()
+    void putData()
     {
         cout << a << endl;
     }
-    friend void operator++(Test&);
+    friend void operator++(Zzz&);
 };
-void operator++(Test &x)
+void operator++(Zzz &x)
 {
-        x.a = ++x.a;
+    x.a = ++x.a;
 }
 main()
 {
-    Test t1, t2, t3;
-    t1.getdata();
-    t2.getdata();
-    t3.getdata();
+    Zzz t1, t2, t3;
+    t1.getData();
+    t2.getData();
+    t3.getData();
     ++t1;
     ++t2;
     ++t3;
     cout<<endl;
-    t1.putdata();
-    t2.putdata();
-    t3.putdata();
+    t1.putData();
+    t2.putData();
+    t3.putData();
 }
