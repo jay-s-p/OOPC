@@ -20,7 +20,7 @@ int area(int a, int b, int h) // 1. change in number of arguments/parameters.
     cout << "\nArea of Trapezoid = " << result << "\t";
     return (result * 10);
 }
-// NOTE :  3. change in Sequence pan ave ho!
+// NOTE :  3. change in Sequence pan avse!
 main()
 {
     area(2);

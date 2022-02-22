@@ -1,5 +1,4 @@
-// Exam ma nai Hoy
-// Its Call by Reference not Pointer...[Both are diffrent here]
+// Its "Call by Reference" not "Pointer"...[Both are diffrent]
 #include <iostream>
 using namespace std;
 class A
@@ -11,7 +10,7 @@ public:
     }
     friend void print(A&);
 };
-void print(A &a) // Reference can declared using "&", pinter ma "*" ave ne eee rite.
+void print(A &a) // Reference can declared using "&", pointer ma "*" ave ne eee rite.
 {
     cout<<a.a<<endl;
     a.a++;

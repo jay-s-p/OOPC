@@ -2,7 +2,7 @@
 // Ama me alag alag rite karlo chhe Khali reference mate j refer karjo
 #include <iostream>
 using namespace std;
-inline int fact(int n) // inline nai lakhi to chalse
+inline int fact(int n)
 {
     if (n < 1)
         return 1;
@@ -11,7 +11,7 @@ inline int fact(int n) // inline nai lakhi to chalse
 }
 main()
 {
-    system("cls"); // jem c ma clrscr() avtu ne ena jevu j chhe.
+    system("cls");
     int n;
 
     cout<<"Enter a value = ";

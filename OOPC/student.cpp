@@ -46,7 +46,7 @@ public:
 };
 int main()
 {
-    student s1, s2("Jay"), s3("Jay", 19), s4("Jay", 19, "Male");
+    student s1, s2("Jay"), s3("Jay", 79), s4("Jay", 79, "Male");
     system("cls");
     s1.getData();
     cout << "\n--- S1 --- ";
