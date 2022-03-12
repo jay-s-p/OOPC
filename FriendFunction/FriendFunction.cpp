@@ -3,21 +3,21 @@ using namespace std;
 class A
 {
     int a;
+
 public:
-    A(){
+    A()
+    {
         a = 28;
     }
     friend void print(A);
 };
 void print(A a)
 {
-    cout<<a.a<<endl;
+    cout << "A = " << a.a;
 }
 
 main()
 {
     A a;
     print(a);
-    // print(a);
-    // print(a);
 }

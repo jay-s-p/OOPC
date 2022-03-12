@@ -12,7 +12,7 @@ public:
         a = x;
     }
     // Declare Friend Class B, So in class B we can Access Class A's Variable.
-    friend class B; // Try to remove this, It will give an Error
+    friend class B; // Try to remove this, Program will give an Error
 };
 class B
 {
@@ -25,7 +25,8 @@ public:
     }
     void print(A &a)
     {
-        cout << a.a << " " << b << endl; // As class B is friend in class A so it can access a variable using "a.a"
+        cout << "A = " << a.a << endl // As class B is friend in class A so it can access private member ...
+             << "B = " << b << endl;
     }
 };
 main()

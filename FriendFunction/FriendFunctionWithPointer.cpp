@@ -3,21 +3,23 @@ using namespace std;
 class A
 {
     int a;
+
 public:
-    A(){
+    A()
+    {
         a = 28;
     }
-    friend void print(A*);
+    friend void printAndIncrement(A *);
 };
-void print(A *a)
+void printAndIncrement(A *a)
 {
-    cout<<a->a<<endl; // Pointer mate "->" use thay, "."(dot) nai
+    cout << a->a << endl; // Pointer mate "->" use thay, "."(dot) nai
     a->a++;
 }
 main()
 {
     A a;
-    print(&a);
-    print(&a);
-    print(&a);
+    printAndIncrement(&a);
+    printAndIncrement(&a);
+    printAndIncrement(&a);
 }

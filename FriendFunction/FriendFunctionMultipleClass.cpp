@@ -26,15 +26,12 @@ public:
 };
 void print(A a, B b)
 {
-    cout << a.a << " " << b.b << endl;
+    cout << "A = " << a.a << endl
+         << "B = " << b.b << endl;
 }
 main()
 {
     A a;
     B b;
-    print(a, b);
-    print(a, b);
-    print(a, b);
-    print(a, b);
     print(a, b);
 }
