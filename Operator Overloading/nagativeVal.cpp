@@ -7,14 +7,8 @@ class Demo
 public:
     void getData()
     {
-        cout << "enter the value of a : ";
-        cin >> a;
-
-        cout << "enter the value of b : ";
-        cin >> b;
-
-        cout << "enter the value of c : ";
-        cin >> c;
+        cout << "enter the value of a,b & c : ";
+        cin >> a >> b >> c;
     }
     void operator-()
     {

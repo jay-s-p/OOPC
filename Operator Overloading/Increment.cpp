@@ -1,8 +1,9 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 class Zzz
 {
     int _var;
+
 public:
     void getData()
     {
@@ -10,7 +11,7 @@ public:
     }
     void putData()
     {
-        cout << "_var = " << _var << endl;
+        cout << _var;
     }
     void operator++() // Here is Operator Overloading
     {
@@ -24,9 +25,12 @@ public:
 main()
 {
     Zzz obj; // Creating object of class Zzz
+    cout << "Enter value : ";
     obj.getData();
     ++obj; // calling for increment object overloading function
+    cout << "\nAfter Increment = ";
     obj.putData();
     --obj; // calling for decrement object overloading function
+    cout << "\nAfter Decrement = ";
     obj.putData();
 }

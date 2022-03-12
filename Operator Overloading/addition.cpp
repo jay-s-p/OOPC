@@ -1,9 +1,10 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Zzz
 {
     int a;
+
 public:
     void getData()
     {
@@ -17,15 +18,17 @@ public:
     {
         Zzz temp;
         temp.a = x.a + a;
-        return temp; 
+        return temp;
     }
 };
 main()
 {
     Zzz t1, t2, t3;
+    cout << "Enter t1 : ";
     t1.getData();
+    cout << "Enter t2 : ";
     t2.getData();
-    t3 = t1 + t2;    
-    cout<<endl;
+    t3 = t1 + t2;
+    cout << "\nAddition of t1 + t2 = ";
     t3.putData();
 }

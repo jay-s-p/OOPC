@@ -33,7 +33,6 @@ public:
 
     // Binary Operator Overloading
     Person operator-(Person x); // we can use "+", "*", "/","%" also.
-    
 
     // Relational Operators Overloading
     friend bool operator>(Person, Person); // we can use "<" also
@@ -64,6 +63,7 @@ istream &operator>>(istream &stream, Person &x)
 
 main()
 {
+    system("cls");
     Person p1, p2; // initialize objects p1 and p2
 
     // get p1's value using member function & print it.
@@ -73,24 +73,24 @@ main()
 
     // Increment p1's age and print it
     ++p1;
-    cout << "\n--- After increment p1 ---\n";
+    cout << "\n\nAfter increment p1's Age :-\n";
     p1.printData();
 
     // Now, let's get p2's age using cin & print using cout
-    cout<<"\n\n--------------------------------";
+    cout << "\n\n--------------------------------";
     cout << "\n\nEnter p2's age = ";
     cin >> p2;
     cout << "\nAge of p2 = " << p2;
 
     // Now, see the difference between p1 and p2's age and store in p3;
     Person p3;
-    p3 = p1 - p2;
-    cout << "\n\nAge difference between p1 and p2 = " << p3;
+    p3 = p2 - p1;
+    cout << "\n\nAge difference between p2 and p1 = " << p3;
 
     // Now, let's see who is elder
-    cout<<"\n\n--------------------------------";
-    if (p1>p2)
-        cout<<"\np1 is elder";
+    cout << "\n\n--------------------------------";
+    if (p1 > p2)
+        cout << "\np1 is elder";
     else
-        cout<<"\np2 is elder";   
+        cout << "\np2 is elder";
 }

@@ -1,8 +1,9 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 class Zzz
 {
     int a;
+
 public:
     void getData()
     {
@@ -12,7 +13,7 @@ public:
     {
         cout << a << endl;
     }
-    friend void operator++(Zzz&);
+    friend void operator++(Zzz &);
 };
 void operator++(Zzz &x)
 {
@@ -20,15 +21,10 @@ void operator++(Zzz &x)
 }
 main()
 {
-    Zzz t1, t2, t3;
-    t1.getData();
-    t2.getData();
-    t3.getData();
-    ++t1;
-    ++t2;
-    ++t3;
-    cout<<endl;
-    t1.putData();
-    t2.putData();
-    t3.putData();
+    Zzz z;
+    cout << "Enter value : ";
+    z.getData();
+    ++z;
+    cout << "After Increment = ";
+    z.putData();
 }
