@@ -1,12 +1,11 @@
 #include <iostream>
 using namespace std;
-class Zzz
+class Demo
 {
     int a;
 
 public:
-    Zzz() {}
-    Zzz(int x)
+    Demo(int x)
     {
         a = x;
     }
@@ -18,15 +17,17 @@ public:
     {
         cout << a;
     }
-    // Zzz operator=(int x)
-    // {
-    //     a = x;
-    // }
+
+    operator int()
+    {
+        return a;
+    }
+    
 };
 main()
 {
-    Zzz d;
-    int x = 5;
-    d = x;
-    d.putData();
+    Demo d(5);
+    int x;
+    x = d; // class to primitive
+    cout << "x = " << x;
 }
