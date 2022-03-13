@@ -15,8 +15,7 @@ public:
     }
     void displayStaffData()
     {
-        cout << endl
-             << "Name           : " << name << endl
+        cout << "Name           : " << name << endl
              << "Code           : " << code << endl;
     }
 };
@@ -115,9 +114,10 @@ main()
     short choice;
     while (1)
     {
-        if(choice % 2 != 0)
+        if (choice % 2 != 0)
             system("cls");
-        cout << "1. Edit teacher's Data" << endl
+        cout << endl
+             << "1. Edit teacher's Data" << endl
              << "2. Display teacher's Data" << endl
              << "3. Edit officer's Data" << endl
              << "4. Display officer's Data" << endl
@@ -158,7 +158,6 @@ main()
         case 8:
             c.display();
             break;
-
         default:
             return 0;
             break;
