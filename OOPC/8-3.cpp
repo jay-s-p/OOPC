@@ -115,6 +115,8 @@ main()
     short choice;
     while (1)
     {
+        if(choice % 2 != 0)
+            system("cls");
         cout << "1. Edit teacher's Data" << endl
              << "2. Display teacher's Data" << endl
              << "3. Edit officer's Data" << endl
@@ -162,45 +164,4 @@ main()
             break;
         }
     }
-
-    // cout << "For teacher :" << endl;
-    // Teacher t;
-    // t.getStaffData();
-    // t.getData();
-    // cout << endl;
-
-    // cout << "For officer :" << endl;
-    // Officer o;
-    // o.getStaffData();
-    // o.getData();
-    // cout << endl;
-
-    // cout << "For regular typist" << endl;
-    // Regular r;
-    // r.getStaffData();
-    // r.getTypistData();
-    // cout << endl;
-
-    // cout << "For casual typist" << endl;
-    // Casual c;
-    // c.getStaffData();
-    // c.getTypistData();
-    // c.getCasualtyInfo();
-    // cout << endl;
-
-    // cout << "Information about teacher :" << endl;
-    // t.display();
-    // cout << endl;
-
-    // cout << "Information about officer :" << endl;
-    // o.display();
-    // cout << endl;
-
-    // cout << "Information about regular typist :" << endl;
-    // r.displayTypistData();
-    // cout << endl;
-
-    // cout << "Information about casual typist :" << endl;
-    // c.display();
-    // cout << endl;
 }
