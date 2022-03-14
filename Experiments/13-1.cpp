@@ -6,14 +6,16 @@
 // functions for - initializing data members. - displaying the values of data 
 // members. - computing amount to be paid for a purchased item. Also 
 // define function main to create objects of both derived classes and to show 
-// usage of above functions 
+// usage of above functions.
 #include <iostream>
 using namespace std;
 class Item
 {
+    
     string name;
-    int code, cost;
-    float discount;
+    int code;
+    protected:
+    int cost, discount;
     public:
         void getData()
         {
@@ -28,34 +30,71 @@ class Item
                  << "Discount   : " << discount << endl;
         }
 };
-class Employee
+class Employee : public Item
 {
     int employee_code, amount;
     string employee_name;
     public:
         void getData()
         {
-            cout << "Enter Employee name, code & amount : ";
-            cin >> employee_name >> employee_code >> amount;
+            Item::getData();
+            cout << "Enter Employee name, code : ";
+            cin >> employee_name >> employee_code;
+        }
+        void calculateDiscount()
+        {
+            amount = cost - discount;
+            cout << "Amount = " << amount << endl;
         }
         void print()
         {
+            Item::print();
             cout << "Employee name  : " << employee_name << endl;
         }
 
 };
-class Customer
+class Customer : public Item
 {
     int amount;
     string customer_name;
     public:
         void getData()
         {
-            cout << "Enter Customer name & amount : ";
-            cin >> customer_name >> amount;
+            Item::getData();
+            cout << "Enter Customer name : ";
+            cin >> customer_name;
+        }
+        void calculateDiscount()
+        {
+            amount = cost - discount;
+            cout << "Amount = " << amount << endl;
         }
         void print()
         {
+            Item::print();
             cout << "Customer name  : " << customer_name << endl;
         }
 };
+main()
+{
+    Customer cus;
+    Employee emp;
+    cus.getData();
+    emp.getData();
+    cus.calculateDiscount();
+    emp.calculateDiscount();
+}
+// O/P :-
+// Customer name  : Jay
+// Item name      : pen
+// Code           : 1
+// Cost           : 1200
+// Discount       : 100
+// Amount         = 1100
+
+// Employee name  : Dev
+// Item name      : mouse
+// Code           : 2
+// Cost           : 5500
+// Discount       : 500
+// Amount         = 5000
