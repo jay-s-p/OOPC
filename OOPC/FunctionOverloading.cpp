@@ -1,30 +1,28 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
-void area(int a) // Simple Function
+
+void add(int a, int b) // Simple Function
 {
-    cout << "\nArea Of Square = " << a * a;
+    cout << "a + b      = " << (a + b) << endl;
 }
-void area(int a, int b) // 1. change in number of Parameters.
+void add(int a, int b, float c) // 1. change in no of Parameteres
 {
-    cout << "\nArea Of Rectangle = " << a * b;
+    cout << "a + b + c  = " << (a + b + c) << endl;
 }
-void area(float pi, int a) // 2. change in Datatype
+void add(int a, float b) //  2. change in Datatypes
 {
-    float result = pi * (a * a);
-    cout << "\nArea of Circle = " << result << "\t";
+    cout << "a + b      = " << (a + b) << endl;
 }
-void area(int a, int b, int c)
+void add(float a, int b) // 3. change in Sequence
 {
-    float s = (a + b + c);
-    float result = sqrt(s * (s - a) * (s - b) * (s - c));
-    cout << "\nArea of Circle using 3 sides = " << result << "\t";
+    cout << "a + b      = " << (a + b) << endl;
 }
-// NOTE :  3. change in Sequence pan avse!
 main()
 {
-    area(2);
-    area(2, 4);
-    area(3.14f, 4);
-    area(4, 8, 2);
+    int a = 28, b = 54;
+    float c = 7.9;
+    add(a, b);
+    add(a, b, c);
+    add(a, c);
+    add(c, b);
 }
