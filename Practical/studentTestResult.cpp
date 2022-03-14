@@ -1,4 +1,3 @@
-// Student vado program
 #include<iostream>
 #include<string>
 using namespace std;
@@ -33,8 +32,6 @@ class Result : public Student, public Test
         int sum,per;
         void getResult()
         {
-            getData();
-            getMarksData();
             for(int i = 0; i < 5; i++)
             {
                 sum = sum + marks[i];
@@ -47,5 +44,7 @@ class Result : public Student, public Test
 main()
 {
     Result r;
+    r.getData();
+    r.getMarksData();
     r.getResult();
 }
