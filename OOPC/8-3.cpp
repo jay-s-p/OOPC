@@ -112,6 +112,10 @@ public:
 main()
 {
     short choice;
+    Teacher t;
+    Officer o;
+    Regular r;
+    Casual c;
     while (1)
     {
         if (choice % 2 != 0)
@@ -127,10 +131,6 @@ main()
              << "8. Display casual Typist's Data" << endl;
         cout << "Enter choice : ";
         cin >> choice;
-        Teacher t;
-        Officer o;
-        Regular r;
-        Casual c;
         system("cls");
         switch (choice)
         {
@@ -160,7 +160,6 @@ main()
             break;
         default:
             return 0;
-            break;
         }
     }
 }
