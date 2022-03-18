@@ -4,6 +4,6 @@
 
 ***code by me :)***
 
-_if you found any error, you can contact me..._
+_if you found any errors, you can contact me..._
 
-[![contact](https://img.shields.io/badge/Contact-97234%2030561-lightgrey?style=for-the-badge&logo=whatsapp)](https://wa.me/919723430561)
+[![Contact](https://img.shields.io/badge/%E2%80%8E-97234%2030561-lightgrey?style=for-the-badge&logo=whatsapp)](https://wa.me/919723430561)
