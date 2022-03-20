@@ -1,6 +1,6 @@
-// 2.3 Write a program to swap the values of two integer number using swap() 
-// function using the concepts of Call by Value & Call by Reference. 
-#include<iostream>
+// 2.3 Write a program to swap the values of two integer number using swap()
+// function using the concepts of Call by Value & Call by Reference.
+#include <iostream>
 using namespace std;
 void swap(int a, int b)
 {
@@ -21,9 +21,9 @@ main()
     cout << "Before Swap : ";
     cout << "\na :" << a << "  b : " << b;
     cout << "\nCall By value : ";
-    swap(a,b);
+    swap(a, b);
     cout << "\na :" << a << "  b : " << b;
     cout << "\nCall By reference : ";
-    swap2(a,b);
+    swap2(a, b);
     cout << "\na :" << a << "  b : " << b;
 }

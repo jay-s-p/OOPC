@@ -2,12 +2,9 @@
 // amount. Create a static function to calculate amount contributed by all
 // person until now. Write a program to evaluate it.
 
-//May be this prog is wrong ~_~
-//May be this prog is wrong ~_~
-//May be this prog is wrong ~_~
+// May be this prog is wrong ¯\_(ツ)_/¯
 
 #include <iostream>
-#include <string>
 using namespace std;
 class Donation
 {
@@ -22,7 +19,7 @@ public:
     }
     static void seeAllDonation()
     {
-        cout << "amount contributed by all person until now : " << totalAmount;
+        cout << "Amount contributed by all person until now : " << totalAmount;
     }
 };
 int Donation::totalAmount = 0;

@@ -1,11 +1,11 @@
-// 2.1 Write a program to create two user defined functions which finds area of 
-// circle and rectangle. 
-#include<iostream>
+// 2.1 Write a program to create two user defined functions which finds area of
+// circle and rectangle.
+#include <iostream>
 #define PI 3.14159265
 using namespace std;
 double area(int r)
 {
-    return (PI * r * r); 
+    return (PI * r * r);
 }
 double area(int a, int b)
 {
@@ -13,7 +13,7 @@ double area(int a, int b)
 }
 main()
 {
-    int r,a,b;
+    int r, a, b;
     cout << "Enter radius of circle : ";
     cin >> r;
     cout << "Area of circle is " << area(r);

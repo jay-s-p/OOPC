@@ -1,20 +1,19 @@
-// 6.2 Define a Class “Complex” having data members as real and imag and 
-// member functions as get_comp(), add_comp() and show_comp(). Write a 
-// program to get information of 2 complex numbers and add these 2 
-// complex numbers and display this result using Overloaded Constructor 
+// 6.2 Define a Class “Complex” having data members as real and imag and
+// member functions as get_comp(), add_comp() and show_comp(). Write a
+// program to get information of 2 complex numbers and add these 2
+// complex numbers and display this result using Overloaded Constructor
 // Concept.
-#include<iostream>
+#include <iostream>
 using namespace std;
 class Complex
 {
     int real, imag;
+
 public:
     void get_comp()
     {
-        cout << "\nEnter the real number : ";
-        cin >> real;
-        cout << "Enter the imaginary number : ";
-        cin >> imag;
+        cout << "\nEnter the real & imaginary number : ";
+        cin >> real >> imag;
     }
     Complex add_comp(Complex c2)
     {
@@ -27,8 +26,6 @@ public:
     {
         cout << real << " + " << imag << "i" << endl;
     }
-
-
 };
 main()
 {
@@ -42,7 +39,7 @@ main()
     c1.show_comp();
     cout << "c2 = ";
     c2.show_comp();
-    
+
     cout << "\nSum is : ";
     c3 = c1.add_comp(c2);
     c3.show_comp();

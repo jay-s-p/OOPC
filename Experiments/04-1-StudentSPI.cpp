@@ -2,8 +2,11 @@
 // std_marks of 3 subjects and member functions as get_data(), put_data()
 // and find_spi(). Write a program to get information of 3 student and find
 // and display the spi of that student
+
+// I don't know how to calculate SPI..
+// SO, If formula is wrong let me know :)
+
 #include <iostream>
-#include <string>
 using namespace std;
 class Student
 {
@@ -23,14 +26,14 @@ public:
     }
     void put_data()
     {
-        cout << "\nName     = "<<std_name;
-        cout << "\nRoll no. = "<<roll_no;
+        cout << "\nName     = " << std_name;
+        cout << "\nRoll no. = " << roll_no;
         find_spi();
     }
     void find_spi()
     {
         // May be formula wrong... I didn't reseach on that much...
-        float spi = (std_marks[0] + std_marks[1] + std_marks[2])/30;
+        float spi = (std_marks[0] + std_marks[1] + std_marks[2]) / 30;
         cout << "\nSPI      = " << spi;
     }
 };

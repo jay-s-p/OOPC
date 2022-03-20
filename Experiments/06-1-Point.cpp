@@ -26,7 +26,8 @@ public:
 };
 main()
 {
-    Point p1, p2(2, 3);
+    Point p1, p2(2, 3), p2Copy = p2;
     p1.printData();
     p2.printData();
+    p2Copy.printData();
 }

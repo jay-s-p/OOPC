@@ -1,10 +1,11 @@
-//  7.1 Write a program to overload Unary Operators („-‟and „++‟) with member 
-// function and friend function. 
-#include<iostream>
+// 7.1 Write a program to overload Unary Operators („-‟and „++‟) with member
+// function and friend function.
+#include <iostream>
 using namespace std;
 class Demo
 {
     int a;
+
 public:
     void getData()
     {
@@ -26,13 +27,13 @@ public:
 };
 main()
 {
-    Demo d;
-    d.getData();
-    d.printData();
-    cout << "\nAfter -d : ";
-    -d;
-    d.printData();
-    cout << "\nAfter ++d : ";
-    ++d;
-    d.printData();
+    Demo D;
+    D.getData();
+    D.printData();
+    cout << "\nAfter ++D : ";
+    ++D;
+    D.printData();
+    cout << "\nAfter -D : ";
+    -D;
+    D.printData();
 }
