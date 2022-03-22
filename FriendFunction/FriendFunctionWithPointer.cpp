@@ -13,7 +13,7 @@ public:
 };
 void printAndIncrement(A *a)
 {
-    cout << a->a << endl; // Pointer mate "->" use thay, "."(dot) nai
+    cout << a->a << endl;
     a->a++;
 }
 main()

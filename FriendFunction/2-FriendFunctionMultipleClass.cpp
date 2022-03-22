@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-class B; // Declaration is needed
+class B; // class B Declaration is needed
 
 class A
 {
@@ -11,8 +11,9 @@ public:
     {
         a = 28;
     }
-    friend void print(A, B); // class B declaration is need because we need here for Friend Function
+    friend void print(A, B);
 };
+
 class B
 {
     int b;

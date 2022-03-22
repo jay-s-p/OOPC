@@ -10,9 +10,9 @@ public:
     {
         a = 10;
     }
-    friend void print(A &);
+    friend void printAndIncrement(A &);
 };
-void print(A &a) // Reference can declared using "&", pointer ma "*" ave ne eee rite.
+void printAndIncrement(A &a)
 {
     cout << a.a << endl;
     a.a++;
@@ -20,8 +20,7 @@ void print(A &a) // Reference can declared using "&", pointer ma "*" ave ne eee 
 main()
 {
     A a;
-    print(a); // only "a" as parameter not "&a", because we are passing Reference Not Pointer
-    print(a);
-    print(a);
-    // NOTE : we have to pass "&a" for Pointer. But for reference we have to pass variable only "a";
+    printAndIncrement(a);
+    printAndIncrement(a);
+    printAndIncrement(a);
 }
