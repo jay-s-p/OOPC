@@ -4,8 +4,8 @@ using namespace std;
 class Staff
 {
 protected:
-    int code;
-    char name[20];
+    int code = 0;
+    string name = "";
 
 public:
     void getStaffData()
@@ -22,8 +22,8 @@ public:
 
 class Teacher : public Staff
 {
-    char subject[30];
-    char publication[30];
+    string subject = "";
+    string publication = "";
 
 public:
     void getData()
@@ -43,7 +43,7 @@ public:
 
 class Officer : public Staff
 {
-    char grade;
+    char grade = ' ';
 
 public:
     void getData()
@@ -62,7 +62,7 @@ public:
 
 class Typist : public Staff
 {
-    int speed;
+    int speed = 0;
 
 public:
     void getTypistData()
@@ -93,7 +93,7 @@ public:
 
 class Casual : public Typist
 {
-    int daily_wages;
+    int daily_wages = 0;
 
 public:
     void getData()
@@ -112,10 +112,10 @@ public:
 main()
 {
     short choice;
-    Teacher t;
-    Officer o;
-    Regular r;
-    Casual c;
+    Teacher teacher;
+    Officer officer;
+    Regular regularTypist;
+    Casual casualTypist;
     while (1)
     {
         if (choice % 2 != 0)
@@ -135,28 +135,28 @@ main()
         switch (choice)
         {
         case 1:
-            t.getData();
+            teacher.getData();
             break;
         case 2:
-            t.display();
+            teacher.display();
             break;
         case 3:
-            o.getData();
+            officer.getData();
             break;
         case 4:
-            o.display();
+            officer.display();
             break;
         case 5:
-            r.getData();
+            regularTypist.getData();
             break;
         case 6:
-            r.display();
+            regularTypist.display();
             break;
         case 7:
-            c.getData();
+            casualTypist.getData();
             break;
         case 8:
-            c.display();
+            casualTypist.display();
             break;
         default:
             return 0;

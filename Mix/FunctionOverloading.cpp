@@ -9,13 +9,13 @@ void add(int a, int b, float c) // 1. change in no of Parameteres
 {
     cout << "a + b + c  = " << (a + b + c) << endl;
 }
-void add(int a, float b) //  2. change in Datatypes
+void add(int a, float c) //  2. change in Datatypes
 {
-    cout << "a + b      = " << (a + b) << endl;
+    cout << "a + c      = " << (a + c) << endl;
 }
-void add(float a, int b) // 3. change in Sequence
+void add(float c, int b) // 3. change in Sequence
 {
-    cout << "a + b      = " << (a + b) << endl;
+    cout << "c + b      = " << (c + b) << endl;
 }
 main()
 {

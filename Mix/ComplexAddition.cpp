@@ -10,13 +10,11 @@ public:
         cout << "Enter the Real and Imagenary number : ";
         cin >> real >> imagenary;
     }
-
     void print()
     {
 
         cout << real << " + " << imagenary << "i" << endl;
     }
-
     Complex sum(Complex c2)
     {
         Complex c3;
@@ -42,7 +40,7 @@ main()
     cout << "2nd complex number : ";
     c2.print();
 
-    cout << endl;
+    system("cls");
 
     c3 = c1.sum(c2);
 

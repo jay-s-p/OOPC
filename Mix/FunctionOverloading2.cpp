@@ -3,22 +3,22 @@
 using namespace std;
 void area(int a) // Simple Function
 {
-    cout << "\nArea Of Square = " << a * a;
+    cout << "\nArea Of Square       = " << a * a;
 }
 void area(int a, int b) // 1. change in number of Parameters.
 {
-    cout << "\nArea Of Rectangle = " << a * b;
+    cout << "\nArea Of Rectangle    = " << a * b;
 }
 void area(float pi, int a) // 2. change in Datatype
 {
     float result = pi * (a * a);
-    cout << "\nArea of Circle = " << result << "\t";
+    cout << "\nArea of Circle       = " << result;
 }
 void area(int a, int b, int c)
 {
     float s = (a + b + c);
     float result = sqrt(s * (s - a) * (s - b) * (s - c));
-    cout << "\nArea of Circle using 3 sides = " << result << "\t";
+    cout << "\nArea of Circle       = " << result;
 }
 // NOTE :  3. change in Sequence pan avse!
 main()

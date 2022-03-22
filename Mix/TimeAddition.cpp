@@ -33,13 +33,19 @@ public:
     }
     void display()
     {
-        cout << hh << ":" << mm << ":" << ss;
+        cout << hh << ":" << mm << ":" << ss << endl;
     }
 };
 
 int main()
 {
     Time t1(1, 35, 35), t2(1, 35, 35), t3;
+    cout << "t1 = ";
+    t1.display();
+    cout << "t2 = ";
+    t2.display();
+
     t3 = t1.sum(t2);
+    cout << "\nt1 + t2 = ";
     t3.display();
 }
