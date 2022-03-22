@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
-class Zzz
+class Demo
 {
     int a, b;
 
 public:
-    Zzz(int x, int y)
+    Demo(int x, int y)
     {
         a = x;
         b = y;
@@ -13,16 +13,16 @@ public:
     void print()
     {
         cout << endl
-             << "a    = " << a << endl
-             << "b    = " << b << endl;
-        cout << "&a   = " << &a << endl
-             << "&b   = " << &b << endl;
+             << "a : " << a << " | "<< &a << endl
+             << "b : " << b << " | "<< &b << endl;
     }
 };
 main()
 {
-    Zzz z(2, 5);
-    z.print();
-    Zzz zzz = z;
-    zzz.print();
+    Demo x(2, 5);
+    cout << "--- x ---";
+    x.print();
+    Demo y = x;
+    cout << "--- y ---";
+    y.print();
 }

@@ -1,7 +1,7 @@
-// So, In deep we solve that Shallow copy with Pointer Problem
-// we create a copy constructor in class and,
-// give new memory to our variable using 'new' keyword.
-// and after that we assign the value
+// Shallow Copy work well with normal values,  
+// But with pointer It will copy the address,
+// So that if we change in any of that object 
+// it will change in both as the address are same :)
 #include <iostream>
 using namespace std;
 class Demo
@@ -15,13 +15,6 @@ public:
         b = new int;
         *a = x;
         *b = y;
-    }
-    Demo(Demo &x) // Here we created, Copy Constructor
-    {
-        a = new int; // give new memory to a
-        b = new int; // give new memory to b
-        *a = *(x.a); // assign values
-        *b = *(x.b); // assign values
     }
     void print()
     {
