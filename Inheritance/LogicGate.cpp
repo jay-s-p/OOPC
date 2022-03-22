@@ -39,11 +39,11 @@ public:
 };
 main()
 {
-    AND a;
-    OR o;
+    AND andGate;
+    OR orGate;
     system("cls");
-    a.getData();
-    a.get_gate_output();
-    o.getData();
-    o.get_gate_output();
+    andGate.getData();
+    andGate.get_gate_output();
+    orGate.getData();
+    orGate.get_gate_output();
 }

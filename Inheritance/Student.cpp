@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 class Student
 {
@@ -62,11 +61,11 @@ public:
     }
     void printData()
     {
-        cout << name;
-        cout << rollNo;
-        cout << internal_mark;
-        cout << external_mark;
-        cout << university_mark;
+        cout << "Name             = " << name << endl;  
+        cout << "Roll no          = " << rollNo << endl;
+        cout << "Internal Marks   = " << internal_mark << endl;
+        cout << "External Marks   = " << external_mark << endl;
+        cout << "University Marks = " << university_mark << endl;
     }
 };
 main()

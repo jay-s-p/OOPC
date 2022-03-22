@@ -1,14 +1,16 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Shape{
-    public:
+class Shape
+{
+public:
     virtual void getData() = 0;
     virtual void area() = 0;
 };
-class Circle : public Shape 
+class Circle : public Shape
 {
     int r;
-    public:
+
+public:
     void getData()
     {
         cout << "Enter r : ";
@@ -16,13 +18,14 @@ class Circle : public Shape
     }
     void area()
     {
-        cout << "Area of cicle is " << 3.14*r*r << endl;
+        cout << "Area of circle is " << 3.14 * r * r << endl;
     }
 };
-class Rectangle : public Shape 
+class Rectangle : public Shape
 {
-    int l,b;
-    public:
+    int l, b;
+
+public:
     void getData()
     {
         cout << "Enter l & b : ";
@@ -33,10 +36,11 @@ class Rectangle : public Shape
         cout << "Area of rectangle is " << (l * b) << endl;
     }
 };
-class Triangle : public Shape 
+class Triangle : public Shape
 {
-    int l,b;
-    public:
+    int l, b;
+
+public:
     void getData()
     {
         cout << "Enter l & b : ";
@@ -44,7 +48,7 @@ class Triangle : public Shape
     }
     void area()
     {
-        cout << "Area of triangle is " << (l * b)/2 << endl;
+        cout << "Area of triangle is " << (l * b) / 2 << endl;
     }
 };
 main()
@@ -54,8 +58,10 @@ main()
     Triangle t;
     c.getData();
     c.area();
+    cout << "\n\n";
     r.getData();
     r.area();
+    cout << "\n\n";
     t.getData();
     t.area();
 }

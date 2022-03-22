@@ -33,5 +33,5 @@ class Car : public Vehicle
 };
 main()
 {
-    Car x;
+    Car carLOL;
 }
