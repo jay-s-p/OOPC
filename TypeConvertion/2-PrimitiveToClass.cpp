@@ -2,31 +2,19 @@
 using namespace std;
 class Demo
 {
-    int a;
-
 public:
+    int a;
     Demo() {}
-
     Demo(int x)
     {
         a = x;
     }
-    
-    void getData(int x)
-    {
-        a = x;
-    }
-    void putData()
-    {
-        cout << a;
-    }
 };
 main()
 {
-    Demo d;
-    int x = 5;
+    int x = 28;
+    Demo obj;
 
-    d = x; // primitive to class
-    cout << "d = ";
-    d.putData();
+    obj = x; // primitive to class
+    cout << "obj.a = " << obj.a;
 }

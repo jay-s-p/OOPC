@@ -11,11 +11,12 @@ public:
     {
         a = x;
     }
-    Demo(Test t);
-    int getData()
+    friend ostream &operator<<(ostream &stream, Demo &x) // cout ma use karva mate
     {
-        return a;
+        stream << x.a;
+        return stream;
     }
+    Demo(Test t); // Class TO Class
     friend Test;
 };
 
@@ -29,13 +30,15 @@ public:
     {
         b = x;
     }
-    Test(Demo d);
-    int getData()
+    friend ostream &operator<<(ostream &stream, Test &x) // cout ma use karva mate
     {
-        return b;
+        stream << x.b;
+        return stream;
     }
+    Test(Demo d); // Class TO Class
     friend Demo;
 };
+// ...
 Demo::Demo(Test t)
 {
     a = t.b; // we access the private member b directly
@@ -47,21 +50,21 @@ Test::Test(Demo d)
 
 main()
 {
-    Demo d(123);
-    Test t(789);
+    Demo a(123);
+    Test b(789);
 
-    cout << "d : " << d.getData();
-    cout << "   t : " << t.getData();
-    cout << "\nBefore d = " << d.getData();
-    d = t; // class to class
-    cout << "\nAfter (d = t) d = " << d.getData();
+    cout << "a : " << a
+         << "\t\tb : " << b;
+    cout << "\nBefore        ---> a = " << a;
+    a = b; // class to class
+    cout << "\nAfter 'a = b' ---> a = " << a;
 
-    Demo d2(111);
-    Test t2(999);
+    Demo c(111);
+    Test d(999);
 
-    cout << "\n\nd2 : " << d2.getData();
-    cout << "   t2 : " << t2.getData();
-    cout << "\nBefore t2 = " << t2.getData();
-    t2 = d2; // class to class
-    cout << "\nAfter (t2 = d2) t2 = " << t2.getData();
+    cout << "\n\nc : " << c
+         << "\t\td : " << d;
+    cout << "\nBefore        ---> d = " << d;
+    d = c; //  class to class
+    cout << "\nAfter 'd = c' ---> d = " << d;
 }
