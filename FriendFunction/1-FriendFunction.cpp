@@ -1,23 +1,23 @@
 #include <iostream>
 using namespace std;
-class A
+class Demo
 {
     int a;
 
 public:
-    A()
+    Demo()
     {
         a = 28;
     }
-    friend void print(A);
+    friend void print(Demo);
 };
-void print(A a)
+void print(Demo x)
 {
-    cout << "A = " << a.a;
+    cout << "a = " << x.a;
 }
 
 main()
 {
-    A a;
+    Demo a;
     print(a);
 }
